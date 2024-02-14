@@ -1,0 +1,23 @@
+module hello_world;
+
+    // Output
+    reg [7:0] data_out [0:11]; // Output data (ASCII codes for "Hello, World!")
+
+    // Assign output data
+    initial begin
+        // Assign ASCII values for "Hello, World!"
+        data_out[0] = 8'h48; // H
+        data_out[1] = 8'h65; // e
+        data_out[2] = 8'h6C; // l
+        data_out[3] = 8'h6C; // l
+        data_out[4] = 8'h6F; // o
+        data_out[5] = 8'h2C; // ,
+        data_out[6] = 8'h20; // (space)
+        data_out[7] = 8'h57; // W
+        data_out[8] = 8'h6F; // o
+        data_out[9] = 8'h72; // r
+        data_out[10] = 8'h6C; // l
+        data_out[11] = 8'h64; // d
+    end
+
+endmodule

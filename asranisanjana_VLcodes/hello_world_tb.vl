@@ -1,0 +1,17 @@
+module hello_world_tb;
+
+    // Instantiate DUT (Design Under Test)
+    hello_world dut ();
+
+    // Stimulus generation
+    integer i; // Declare loop variable outside the initial block
+    initial begin
+        // Display "Hello, World!" from DUT output
+        for (i = 0; i < 12; i = i + 1) begin
+            $display("%c", dut.data_out[i]);
+        end
+        // Finish simulation
+        $finish;
+    end
+
+endmodule
