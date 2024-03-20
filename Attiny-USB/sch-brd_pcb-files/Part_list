@@ -1,0 +1,18 @@
+Partlist
+
+Exported from final_sch.brd at 07/03/2024 1:32:53 PM
+
+EAGLE Version 6.2.0 Copyright (c) 1988-2012 CadSoft
+
+Assembly variant: 
+
+Part     Value          Package               Library             Position (inch)       Orientation
+
+D1       1N5333         C1702-15              diode               (2 1)                 R90
+D2       1N5333         C1702-15              diode               (2.3 1)               R90
+D3       1N5819         DO41-10               1N5819              (0.3 0.8)             R90
+J1       USB-A-S-X-X-VU SAMTEC_USB-A-S-X-X-VU USB-A-S-X-X-VU      (1.6 0.45)            R90
+R1       100            AXIAL-0.3EZ           SparkFun-Resistors  (0.85 1)              R0
+R2       100            AXIAL-0.3EZ           SparkFun-Resistors  (1.25 0.9)            R90
+R3       1k             AXIAL-0.3-KIT         SparkFun-Resistors  (0.85 0.7)            R180
+U1       ATTINY85-20P   PDIP08_300MIL         _hhn_attiny25_45_85 (1.2 1.4)             R0
