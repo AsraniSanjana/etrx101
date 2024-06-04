@@ -1,0 +1,22 @@
+// ref: https://youtu.be/B3t6vpQZgl4?feature=shared
+NET "clk" LOC = "P55";
+
+NET "a[0]" LOC = "P80";
+NET "a[1]" LOC = "P81";
+NET "a[2]" LOC = "P82";
+NET "a[3]" LOC = "P84";
+
+NET "b[0]" LOC = "P83";
+NET "b[1]" LOC = "P88";
+NET "b[2]" LOC = "P85";
+NET "b[3]" LOC = "P92";
+
+NET "en" LOC = "P114";
+
+NET "result[4]" LOC = "P93";
+NET "result[3]" LOC = "P94";
+NET "result[2]" LOC = "P95";
+NET "result[1]" LOC = "P07";
+NET "result[0]" LOC = "P08";
+
+NET "ack" LOC = "P104";

@@ -1,0 +1,14 @@
+
+iverilog -o hello_world-op hello_world.vl
+
+vvp hello_world-op
+
+
+==================================================
+
+iverilog -o OUTPUTFILE -tvvp INPUTFILE.vl
+vvp OUTPUTFILE
+
+iverilog -o ANDOUTPUTFILE and.vl and_tb.vl
+----------------------------------------------------
+

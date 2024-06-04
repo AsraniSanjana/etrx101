@@ -1,0 +1,20 @@
+n=3
+2 raise to n becomes 8,
+2^n=2_RAISE_TO_N 
+
+for i=0; i<2_RAISE_TO_N; i++
+a= (i<(2_RAISE_TO_N/2)?0:1;
+b= ((i%(2_RAISE_TO_N/2))<(2_RAISE_TO_N/4)?0:1;
+c= ((i%(2_RAISE_TO_N/2))<(2_RAISE_TO_N/8)?0:1;
+d= ((i%(2_RAISE_TO_N/2))<(2_RAISE_TO_N/16)?0:1;
+
+
+
+=================
+
+2 raise to 5 is 32
+a 00000000000000001111111111111111  32/2
+b 0000000011111111   32/4
+c 00001111  32/8
+d 00110011  32/16
+e 01010101  32/

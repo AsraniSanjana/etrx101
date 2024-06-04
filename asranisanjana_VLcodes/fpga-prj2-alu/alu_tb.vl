@@ -1,0 +1,51 @@
+//this testbench code takes user ips from cmd line of terminal
+`timescale 1ns / 1ps
+
+module alu_tb;
+
+    // Define parameters
+    parameter PERIOD = 10; // Clock period in ns
+
+    // Inputs
+    reg [3:0] a, b;
+    reg en;
+    reg [2:0] opcod;
+
+    // Outputs
+    wire [4:0] result;
+    wire ack;
+
+    // Instantiate the module to be tested
+    alu dut (
+        .a(a),
+        .b(b),
+        .en(en),
+        .opcod(opcod),
+        .result(result),
+        .ack(ack)
+    );
+
+    // Clock generation
+    reg clk = 0;
+    always #((PERIOD)/2) clk = ~clk;
+
+    // Test stimulus
+    initial begin
+        $monitor("Time=%0t a=%b b=%b en=%b opcod=%b result=%b ack=%b", $time, a, b, en, opcod, result, ack);
+        
+        // Test case 1: en=0, expect result=0, ack=0
+        #5 en = 0;
+        
+        // Test case 2: en=1, opcod=3'b001 (subtract), a=5, b=3, expect result=2, ack=1
+        #5 en = 1; opcod = 3'b001; a = 5; b = 3;
+        
+        // Test case 3: en=1, opcod=3'b010 (add), a=2, b=3, expect result=5, ack=1
+        #5 opcod = 3'b010; a = 2; b = 3;
+        
+        // Add more test cases as needed...
+        
+        // End of simulation
+        #10 $finish;
+    end
+
+endmodule
